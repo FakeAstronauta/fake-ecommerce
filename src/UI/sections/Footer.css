@@ -1,0 +1,32 @@
+.foot-pad{
+    padding-left: 4.166666%;
+}
+
+.foot-font{
+    font-size: 1.2rem;
+}
+
+.foot-top-pad{
+    padding-top: 20px;
+}
+
+.foot-bottom-pad{
+    padding-bottom: 20px;
+}
+
+.footer-icons ul{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.footer-icons ul li:not(:first-child) {
+    margin-left: 30px;
+}
+
+.txt-alg-r{
+    text-align: right;
+}

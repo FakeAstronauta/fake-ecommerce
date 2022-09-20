@@ -1,0 +1,104 @@
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+header section {
+    position: relative;
+    /* width: 100%; */
+}
+
+/* a empty div that allows the correct distributions of the header elements */
+.header__out-in {
+    width: 74.4px;
+}
+
+.header--arrange {
+    padding: 10px 30px 15px 30px;
+}
+
+.m-header--arrange {
+    padding: 12px 10px 0 10px;
+}
+
+.header__icons {
+    font-size: 1.7em;
+    padding: 0 0 0 10px;
+}
+
+.header__title {
+    font-size: 2em;
+}
+
+.m-header__title {
+    font-size: 1.4em;
+}
+
+.m-nav-links {
+    position: relative;
+    width: 100%;
+}
+
+.grid-padding-1 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+section .nav-bar--arrange {
+    padding-left: 16.333333%;
+    padding-right: 16.333333%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    position: inherit;
+
+}
+
+.bg-extended,
+.bg-short,
+.m-bg-short {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* animation realated */
+
+.bg-extended {
+    height: 500px;
+}
+
+.bg-short {
+    transition: opacity 0.3s;
+    height: 106px;
+}
+
+.m-bg-short {
+    transition: opacity 0.3s;
+    height: 55px;
+}
+
+@media (min-width: 1380px) {
+    .nav-bar--arrange {
+        padding-left: 16.666666%;
+        padding-right: 16.666666%;
+    }
+}
+
+@media (min-width:2560px) {
+    .top {
+        padding: 0 calc(50vw - 1280px);
+    }
+}
+
+/* @media(max-width: 1200px) {
+    .header {
+        display: none;
+    }
+    
+    .m-header {
+        display: block;
+    }
+} */
