@@ -5,7 +5,6 @@ import { moveCarousel, rotateArr } from '../../animations/ProductsCarousel'
 import useApi from "../../hooks/useApi";
 
 const ProductsCarousel = ({resized}) => {
-  //let { data } = useApi('search?query=gloss', '&per_page=11', '&orientation=portrait');
   
   let imgArr = React.useRef([]);
   let contRef = React.useRef([]);
@@ -22,7 +21,6 @@ const ProductsCarousel = ({resized}) => {
   ]
 
   React.useEffect(() => {
-    console.log('rsized')
     moveCarousel(imgArr, 5, false);
   }, [resized])
 
