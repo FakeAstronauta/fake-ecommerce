@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+/* import { useEffect, useState } from "react"
 
 
 const useApi = (...imgId) => {
@@ -29,4 +29,4 @@ const useApi = (...imgId) => {
   return { loading, data }
 };
 
-export default useApi
+export default useApi */

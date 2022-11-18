@@ -14,10 +14,11 @@ const MenuSection = ({ num, subMenuRef }) => {
     let limit = content.links.limit;
     let editorial = content.editorial;
 
-    /* arrange the contents to fit in dropdown menu */
+    /* grouping the contents to display in the dropdown menu */
+    
     React.useEffect(() => {
-        let g = [];
-        let i = []
+        let i = []; // create a new array
+        let g = []; // array containing the new arrays
 
         list.forEach((e) => {
             i.push(e);

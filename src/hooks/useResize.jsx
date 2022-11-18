@@ -8,6 +8,7 @@ export const useResize = () => {
     }
     
     return { resized, setResized }
+
 }
 
 export default useResize

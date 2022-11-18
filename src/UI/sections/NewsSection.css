@@ -1,90 +1,59 @@
-#news-section{
-    position: relative;
-    width: 100%;
-    height: fit-content;
+.news-section {
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.distribute {
+    background-color: #ffc1c3;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    display: flex;
     justify-content: center;
-    margin-top: 130px;
-    /* background-color: yellowgreen; */
+    padding-bottom: 50px;
 }
 
-#news-section > img{
-    height: auto;
-    width: 31vw;
-    left: 10%;
-    top: 0px;
-    transform:translate(-25vw, -5vh);
+.wrapper{
+    margin-top: -50px;
+    position: relative;
 }
 
-#news-section > #red-box{
+.wrapper::before{
+    display: block;
+    background: #f9f9f9;
+    content: "";
     width: 100%;
-    max-width: 2560px;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    background-color: #AD0303;
-
+    padding-top: 125%;
 }
 
-#news-section > #red-box > #text-box{
-    width: 50vw;
+.text-box {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 0 40px 0 40px;
+    margin: auto;
+    padding: 40px 0;
 }
 
-#news-section > #red-box > #text-box > h2{
-    color: white;
-    font-size: 2.7em;
+.main-content{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
 }
 
-#news-section > #red-box > #text-box > p{
-    color: white;
-    font-size: 1.3em;
-    width: 36vw;
+.section-title{
+    line-height: 1em;
 }
 
-@media screen and (max-width: 900px){
-    #news-section{
-        margin-top: 10em;
-    }
-
-
-    #news-section > #red-box{
-        height: auto;
-        width: 100%;
-        justify-content: center;
-
-    }
-
-    #news-section > #red-box > #text-box{
-        width: 85vw;
-        padding: 30px 0px 30px 0px;
-    }
-
-    #news-section > img{
-        display: none;
-    }
-
-    #news-section > #red-box > #text-box > h2{
-        font-size: 2.5em;
-    }
-
-    #news-section > #red-box > #text-box > p{
-        width: 90vw;
-        font-size: 1em;
-
-    }
-}
-
-@media screen and (max-width: 400px){
-    #news-section{
-        margin-top: 14em;
-    }
+@media screen and (max-width: 769px){
+        .content-box{
+            padding-bottom: 0;
+        }
 }

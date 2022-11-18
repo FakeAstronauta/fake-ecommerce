@@ -1,8 +1,6 @@
 import React from 'react'
-import '../../animations/Carousel.css'
 import './HeroCarousel.css'
 import { moveCarousel, rotateArr } from '../../animations/ProductsCarousel'
-import useApi from "../../hooks/useApi";
 
 const ProductsCarousel = ({resized}) => {
   
@@ -11,8 +9,8 @@ const ProductsCarousel = ({resized}) => {
 
   let data = [
     1003,
-    1005,
-    1011,
+    1009,
+    1012,
     1013,
     1025,
     1035,

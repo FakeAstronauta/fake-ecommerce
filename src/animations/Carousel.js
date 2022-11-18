@@ -1,3 +1,4 @@
+/* moves last element to the beginning */
 export let rotateArr = (imgArr, imgToShow, firstLoad, direction = 1) => {
     let curr = imgArr.current; 
     let popped = curr.pop();
@@ -11,9 +12,11 @@ export let rotateArr = (imgArr, imgToShow, firstLoad, direction = 1) => {
         curr.push(curr.shift());
     }
     
-    setTimeout(() => moveCarousel(imgArr, imgToShow, firstLoad), 1);
+    // setTimeout(() => moveCarousel(imgArr, imgToShow, firstLoad), 1);
+    setTimeout(() => startCarousel(imgArr, imgToShow, firstLoad), 1);
 }
 
+// rotate images 
 export let moveCarousel = (imgArr, imgToShow, firstLoad) => {
     let valDisplace = 0;
     let winWidth = window.innerWidth;
@@ -30,13 +33,13 @@ export let moveCarousel = (imgArr, imgToShow, firstLoad) => {
         e.style.transform = `translateX(${valDisplace}%)`;
     })
 
-    startCarousel(imgArr, imgToShow, false);
+    rotateArr(imgArr, imgToShow, false);
 }
 
 /* BUG: when delay is the same as animation speed */
-
+// keeps the carousel rotating
 export let startCarousel = (imgArr, imgToShow, firstLoad) => {
     setTimeout(() => {
-        rotateArr(imgArr, imgToShow, firstLoad);
+        moveCarousel(imgArr, imgToShow, firstLoad);
     }, 5000)
 }

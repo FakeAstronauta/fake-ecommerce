@@ -15,14 +15,15 @@ const Home = () => {
   let { resized, setResized } = useResize();
   return (
     <>
-      {<HeroCarousel />}
-      {resized > 1200 && <ProductsCarousel resized={resized}/>}
-      <NewsSection/>
-      <ImagesGallery/>
+    <HeroCarousel />
+     {/*  {}
+      {resized > 1200 && <ProductsCarousel resized={resized}/>} */}
+      {/* {<NewsSection resized={resized}/>} */}
+      {/* <ImagesGallery/>
       <Offers/>
       <Newsletter/>
       {resized > 1200 ? <NavBar/> : <NavBarM/>}
-      <Footer/>
+      <Footer/> */}
     </>
   )
 }

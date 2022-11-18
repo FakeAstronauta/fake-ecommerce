@@ -29,5 +29,4 @@ const NavBarLinks = ({ lastElem, linkRef, menuRef, subMenuRef, headerRef }) => {
     )
 }
 
-
 export default NavBarLinks

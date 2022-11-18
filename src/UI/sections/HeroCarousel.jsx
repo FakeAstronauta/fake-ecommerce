@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../animations/Carousel.css'
 import './HeroCarousel.css'
 
 import { moveCarousel } from '../../animations/Carousel'
@@ -18,11 +17,12 @@ const HeroCarousel = () => {
   ];
 
   return (
-    <div className='carousel-cont'>
+    <div className='carousel-cont' onLoad={()=>{console.log('render')}}>
       {
         data.map((e, i) =>
           <div key={`hero-${i}`}ref={(e) => imgArr.current[i] = e} className={`img-cont ${i}`}>
-            <img src={`https://picsum.photos/id/${e}/600/800`}></img>
+            <h1 className='img-index'>{i}</h1>
+            <img src={`https://picsum.photos/id/${e}/700/900`}></img>
           </div>
         )
       }

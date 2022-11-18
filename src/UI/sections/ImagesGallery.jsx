@@ -1,7 +1,6 @@
 import React from "react";
 import './ImagesGallery.css';
 import { useState, useEffect } from 'react';
-import useApi from "../../hooks/useApi";
 
 export default function ProductGallery() {
     let data = [
