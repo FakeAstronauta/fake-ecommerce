@@ -17,12 +17,11 @@ const HeroCarousel = () => {
   ];
 
   return (
-    <div className='carousel-cont' onLoad={()=>{console.log('render')}}>
+    <div className='carousel-cont'>
       {
         data.map((e, i) =>
           <div key={`hero-${i}`}ref={(e) => imgArr.current[i] = e} className={`img-cont ${i}`}>
-            <h1 className='img-index'>{i}</h1>
-            <img src={`https://picsum.photos/id/${e}/700/900`}></img>
+            <img src={`https://picsum.photos/id/${e}/1400/1600`}></img>
           </div>
         )
       }

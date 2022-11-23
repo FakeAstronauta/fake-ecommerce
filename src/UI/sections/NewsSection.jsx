@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from "react";
+import { useResize } from '../../context/ResizeProvider'
 
 import './NewsSection.css';
 
-export default function NewsSection({ resized }) {
+export default function NewsSection() {
+    let resized = useResize();
+    
     // memoization to avoid reload the api?
     let contentRef = useRef([]).current;
     const desktopSize = ['col-6', 'col-8'];
